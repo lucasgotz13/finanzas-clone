@@ -7,7 +7,12 @@ export interface DollarRate {
     fechaActualizacion: string;
 }
 
-export interface InflacionMensual {
+export interface Inflacion {
     fecha: string;
     valor: number;
+}
+
+export interface DataPoint {
+    date: string;
+    value: number;
 }

@@ -1,11 +1,11 @@
-import { InflacionMensual } from "@/lib/types";
+import { Inflacion } from "@/lib/types";
 import { Card, CardContent, CardFooter } from "./ui/card";
 
 export default function ArgyDataCard({
     data,
     nombre,
 }: {
-    data: InflacionMensual;
+    data: Inflacion;
     nombre: string;
 }) {
     return (

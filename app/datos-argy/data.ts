@@ -1,5 +1,5 @@
-import type { InflacionMensual } from "@/lib/types";
-export async function getInflationRate(): Promise<InflacionMensual[]> {
+import type { Inflacion } from "@/lib/types";
+export async function getInflationRate(): Promise<Inflacion[]> {
     const res = await fetch(
         "http://localhost:3000/api/datos-argy/inflacion-mensual",
         {
@@ -16,7 +16,7 @@ export async function getInflationRate(): Promise<InflacionMensual[]> {
     return res.json();
 }
 
-export async function getAnnualInflationRate(): Promise<InflacionMensual[]> {
+export async function getAnnualInflationRate(): Promise<Inflacion[]> {
     const res = await fetch(
         "http://localhost:3000/api/datos-argy/inflacion-interanual",
         {
@@ -33,7 +33,7 @@ export async function getAnnualInflationRate(): Promise<InflacionMensual[]> {
     return res.json();
 }
 
-export async function getRiesgoPais(): Promise<InflacionMensual> {
+export async function getRiesgoPais(): Promise<Inflacion> {
     const res = await fetch(
         "http://localhost:3000/api/datos-argy/riesgo-pais",
         {
